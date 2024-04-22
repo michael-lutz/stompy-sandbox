@@ -5,7 +5,8 @@ This repository provides a simple way to train and test RL policies on Stompy, a
 ## Installation
 Clone the repository:
 ```zsh
-git clone
+git clone https://github.com/michael-lutz/stompy-sandbox.git
+cd stompy-sandbox
 ```
 
 I recommend creating a new conda enviroment to run the code. Run the following commands to create a new conda environment and activate it:
