@@ -11,10 +11,23 @@ import time
 
 # Local imports
 from infrastructure.replay_buffer import ReplayBuffer, Transition
-from infrastructure.utils import sample_n_trajectories, get_image
-from infrastructure.logger import Logger
+from infrastructure.utils import get_image
+from envs.stompy_walk import StompyWalkEnv
+from envs.humanoid_walk import HumanoidWalkEnv
+from envs.stompy_standup import StompyStandupEnv
 from agents.ppo_copy import PPOAgent, RolloutBuffer
 from agents.basic_agent import ContinuousPolicyNetwork, ValueNetwork
+
+def initialize_env(env_name):
+    if env_name == 'StompyWalk':
+        env = StompyWalkEnv(render_mode='rgb_array')
+    elif env_name == 'StompyStandup':
+        env = StompyStandupEnv(render_mode='rgb_array')
+    elif env_name == 'HumanoidWalk':
+        env = HumanoidWalkEnv(render_mode='rgb_array')
+    else:
+        env = gym.make(env_name, render_mode='rgb_array')
+    return env
 
 def parse_args():
     parser = argparse.ArgumentParser(description="Train a PPO agent for humanoid locomotion.")
@@ -42,8 +55,6 @@ def parse_args():
 def main():
     args = parse_args()
 
-    # Set device
-    print("============================================================================================")
     # set device to cpu or cuda
     device = torch.device('cpu')
     if(torch.cuda.is_available() and args.device != 'cpu'): 
@@ -52,18 +63,17 @@ def main():
         print("Device set to : " + str(torch.cuda.get_device_name(device)))
     else:
         print("Device set to : cpu")
-    print("============================================================================================")
 
     # Initialize the environment
+    
     print(f"Training PPO agent on {args.env} environment")
-    env = gym.make(args.env, render_mode='rgb_array')
     log_dir = args.log_dir + '/' + args.exp_name + '-' + time.strftime("%d-%m-%Y_%H-%M-%S") + "/"
     # make directory for logging if doesn't exist
     if not os.path.exists(log_dir):
         os.makedirs(log_dir)
-    logger = Logger(log_dir=log_dir)
     
     # Initialize networks and agent
+    env = initialize_env(args.env)
     ac_dim = env.action_space.shape[0]
     ob_dim = env.observation_space.shape[0]
     print(f"Action space dimension: {ac_dim}, Observation space dimension: {ob_dim}")
@@ -79,7 +89,7 @@ def main():
 
     for iteration in range(args.iters):
         render_trajectories = False
-        if args.record_video and iteration % args.video_interval == 0:
+        if args.record_video and iteration % args.video_interval == 0 and iteration > 0:
             render_trajectories = True
         
         obs, _ = env.reset()
@@ -148,18 +158,17 @@ def main():
                 fps = env.metadata['render_fps']
             images = np.array(images)
             images = images[np.newaxis, ...]
-            logger.log_paths_as_videos(
-                images, iteration,
-                fps=fps,
-                video_title='training_rollouts') # we might want to do eval rollouts, but shouldn't make a difference
         
             # log to wandb
             wandb.log({'training_rollouts': wandb.Video(images, fps=fps, format="mp4"), 'step': iteration})
 
+            # reinitialize environment... hacky fix to avoid black screen bug
+            env = initialize_env(args.env)
+
     env.close()
 
 if __name__ == "__main__":
-    display = Display(visible=False, size=(1024, 768))
+    display = Display(visible=False, size=(640, 480))
     display.start()
     main()
     display.stop()

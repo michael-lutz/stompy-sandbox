@@ -9,7 +9,7 @@ from agents.basic_agent import RLAgent
 
 def get_image(env):
     img = env.render()
-    img = np.moveaxis(img, 2, 0)
+    img = np.moveaxis(img, 2, 0) # TODO: make it actually track the robot
     return img
 
 def compute_log_probs(actions, action_means, variances):
