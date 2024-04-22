@@ -1,6 +1,6 @@
 # Stompy's Sandbox
 
-This repository provides a simple way to train and test RL policies on Stompy, a bipedal robot created by K-Scale Labs. The simulation runs on Mujoco and implements the Gym interface.
+This repository provides a simple way to train and test RL policies on Stompy, a humanoid robot created by K-Scale Labs. The simulation runs on Mujoco and implements the Gym interface.
 
 ## Installation
 Clone the repository:
