@@ -1,0 +1,6 @@
+gym>=0.26
+mujoco>=3.0.0
+torch
+numpy
+matplotlib
+wandb

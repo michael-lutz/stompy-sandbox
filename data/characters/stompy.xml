@@ -1,0 +1,446 @@
+<mujoco model="robot">
+  <compiler angle="radian" meshdir="meshes/" autolimits="true"/>
+  <statistic meansize="0.135512" extent="1.38189" center="2.16562e-05 -0.048975 -0.296941"/>
+  <asset>
+    <mesh name="torso_1_top_torso_1" file="torso_1_top_torso_1.stl"/>
+    <mesh name="head_1_x4_1_pcb_1" file="head_1_x4_1_pcb_1.stl"/>
+    <mesh name="right_arm_1_x8_1_outer_1" file="right_arm_1_x8_1_outer_1.stl"/>
+    <mesh name="left_arm_2_x8_1_outer_1" file="left_arm_2_x8_1_outer_1.stl"/>
+    <mesh name="torso_1_bottom_torso_1" file="torso_1_bottom_torso_1.stl"/>
+    <mesh name="torso_1_top_back_1" file="torso_1_top_back_1.stl"/>
+    <mesh name="head_1_x4_1_outer_1" file="head_1_x4_1_outer_1.stl"/>
+    <mesh name="right_arm_1_x8_1_inner_1" file="right_arm_1_x8_1_inner_1.stl"/>
+    <mesh name="right_arm_1_x8_1_pcb_1" file="right_arm_1_x8_1_pcb_1.stl"/>
+    <mesh name="left_arm_2_x8_1_inner_1" file="left_arm_2_x8_1_inner_1.stl"/>
+    <mesh name="left_arm_2_x8_1_pcb_1" file="left_arm_2_x8_1_pcb_1.stl"/>
+    <mesh name="torso_1_bottom_back_1" file="torso_1_bottom_back_1.stl"/>
+    <mesh name="torso_1_x8_1_outer_1" file="torso_1_x8_1_outer_1.stl"/>
+    <mesh name="torso_1_battery_mount_1" file="torso_1_battery_mount_1.stl"/>
+    <mesh name="head_1_x4_1_inner_1" file="head_1_x4_1_inner_1.stl"/>
+    <mesh name="right_arm_1_shoulder_inner_1" file="right_arm_1_shoulder_inner_1.stl"/>
+    <mesh name="left_arm_2_shoulder_inner_1" file="left_arm_2_shoulder_inner_1.stl"/>
+    <mesh name="torso_1_x8_1_inner_1" file="torso_1_x8_1_inner_1.stl"/>
+    <mesh name="torso_1_x8_1_pcb_1" file="torso_1_x8_1_pcb_1.stl"/>
+    <mesh name="torso_1_battery_1" file="torso_1_battery_1.stl"/>
+    <mesh name="head_1_neck_1" file="head_1_neck_1.stl"/>
+    <mesh name="right_arm_1_x8_2_outer_1" file="right_arm_1_x8_2_outer_1.stl"/>
+    <mesh name="left_arm_2_x8_2_outer_1" file="left_arm_2_x8_2_outer_1.stl"/>
+    <mesh name="legs_1_hips_1" file="legs_1_hips_1.stl"/>
+    <mesh name="head_1_x4_2_pcb_1" file="head_1_x4_2_pcb_1.stl"/>
+    <mesh name="right_arm_1_x8_2_inner_1" file="right_arm_1_x8_2_inner_1.stl"/>
+    <mesh name="right_arm_1_x8_2_pcb_1" file="right_arm_1_x8_2_pcb_1.stl"/>
+    <mesh name="left_arm_2_x8_2_inner_1" file="left_arm_2_x8_2_inner_1.stl"/>
+    <mesh name="left_arm_2_x8_2_pcb_1" file="left_arm_2_x8_2_pcb_1.stl"/>
+    <mesh name="legs_1_x8_1_outer_1" file="legs_1_x8_1_outer_1.stl"/>
+    <mesh name="legs_1_x8_2_outer_1" file="legs_1_x8_2_outer_1.stl"/>
+    <mesh name="head_1_x4_2_outer_1" file="head_1_x4_2_outer_1.stl"/>
+    <mesh name="right_arm_1_shoulder_nontorso_1" file="right_arm_1_shoulder_nontorso_1.stl"/>
+    <mesh name="left_arm_2_shoulder_nontorso_1" file="left_arm_2_shoulder_nontorso_1.stl"/>
+    <mesh name="legs_1_x8_1_inner_1" file="legs_1_x8_1_inner_1.stl"/>
+    <mesh name="legs_1_x8_1_pcb_1" file="legs_1_x8_1_pcb_1.stl"/>
+    <mesh name="legs_1_x8_2_inner_1" file="legs_1_x8_2_inner_1.stl"/>
+    <mesh name="legs_1_x8_2_pcb_1" file="legs_1_x8_2_pcb_1.stl"/>
+    <mesh name="head_1_x4_2_inner_1" file="head_1_x4_2_inner_1.stl"/>
+    <mesh name="right_arm_1_x6_1_outer_1" file="right_arm_1_x6_1_outer_1.stl"/>
+    <mesh name="left_arm_2_x6_1_outer_1" file="left_arm_2_x6_1_outer_1.stl"/>
+    <mesh name="legs_1_right_leg_1_hip_rotate_1" file="legs_1_right_leg_1_hip_rotate_1.stl"/>
+    <mesh name="legs_1_left_leg_1_hip_rotate_1" file="legs_1_left_leg_1_hip_rotate_1.stl"/>
+    <mesh name="head_1_head_1" file="head_1_head_1.stl"/>
+    <mesh name="right_arm_1_x6_1_inner_1" file="right_arm_1_x6_1_inner_1.stl"/>
+    <mesh name="right_arm_1_x6_1_pcb_1" file="right_arm_1_x6_1_pcb_1.stl"/>
+    <mesh name="left_arm_2_x6_1_inner_1" file="left_arm_2_x6_1_inner_1.stl"/>
+    <mesh name="left_arm_2_x6_1_pcb_1" file="left_arm_2_x6_1_pcb_1.stl"/>
+    <mesh name="legs_1_right_leg_1_x8_1_outer_1" file="legs_1_right_leg_1_x8_1_outer_1.stl"/>
+    <mesh name="legs_1_left_leg_1_x8_1_outer_1" file="legs_1_left_leg_1_x8_1_outer_1.stl"/>
+    <mesh name="head_1_eye_1" file="head_1_eye_1.stl"/>
+    <mesh name="head_1_eye_2" file="head_1_eye_2.stl"/>
+    <mesh name="right_arm_1_elbow_1" file="right_arm_1_elbow_1.stl"/>
+    <mesh name="left_arm_2_elbow_1" file="left_arm_2_elbow_1.stl"/>
+    <mesh name="legs_1_right_leg_1_x8_1_inner_1" file="legs_1_right_leg_1_x8_1_inner_1.stl"/>
+    <mesh name="legs_1_right_leg_1_x8_1_pcb_1" file="legs_1_right_leg_1_x8_1_pcb_1.stl"/>
+    <mesh name="legs_1_left_leg_1_x8_1_inner_1" file="legs_1_left_leg_1_x8_1_inner_1.stl"/>
+    <mesh name="legs_1_left_leg_1_x8_1_pcb_1" file="legs_1_left_leg_1_x8_1_pcb_1.stl"/>
+    <mesh name="right_arm_1_x6_2_outer_1" file="right_arm_1_x6_2_outer_1.stl"/>
+    <mesh name="left_arm_2_x6_2_outer_1" file="left_arm_2_x6_2_outer_1.stl"/>
+    <mesh name="legs_1_right_leg_1_thigh_rotate_right_1" file="legs_1_right_leg_1_thigh_rotate_right_1.stl"/>
+    <mesh name="legs_1_left_leg_1_thigh_rotate_left_1" file="legs_1_left_leg_1_thigh_rotate_left_1.stl"/>
+    <mesh name="right_arm_1_x6_2_inner_1" file="right_arm_1_x6_2_inner_1.stl"/>
+    <mesh name="right_arm_1_x6_2_pcb_1" file="right_arm_1_x6_2_pcb_1.stl"/>
+    <mesh name="left_arm_2_x6_2_inner_1" file="left_arm_2_x6_2_inner_1.stl"/>
+    <mesh name="left_arm_2_x6_2_pcb_1" file="left_arm_2_x6_2_pcb_1.stl"/>
+    <mesh name="legs_1_right_leg_1_x10_2_outer_1" file="legs_1_right_leg_1_x10_2_outer_1.stl"/>
+    <mesh name="legs_1_left_leg_1_x10_1_outer_1" file="legs_1_left_leg_1_x10_1_outer_1.stl"/>
+    <mesh name="right_arm_1_forearm_1" file="right_arm_1_forearm_1.stl"/>
+    <mesh name="left_arm_2_forearm_1" file="left_arm_2_forearm_1.stl"/>
+    <mesh name="legs_1_right_leg_1_x10_2_inner_1" file="legs_1_right_leg_1_x10_2_inner_1.stl"/>
+    <mesh name="legs_1_right_leg_1_x10_2_pcb_1" file="legs_1_right_leg_1_x10_2_pcb_1.stl"/>
+    <mesh name="legs_1_left_leg_1_x10_1_inner_1" file="legs_1_left_leg_1_x10_1_inner_1.stl"/>
+    <mesh name="legs_1_left_leg_1_x10_1_pcb_1" file="legs_1_left_leg_1_x10_1_pcb_1.stl"/>
+    <mesh name="right_arm_1_x4_1_pcb_1" file="right_arm_1_x4_1_pcb_1.stl"/>
+    <mesh name="left_arm_2_x4_1_pcb_1" file="left_arm_2_x4_1_pcb_1.stl"/>
+    <mesh name="legs_1_right_leg_1_belt_thigh_right_1" file="legs_1_right_leg_1_belt_thigh_right_1.stl"/>
+    <mesh name="legs_1_left_leg_1_belt_thigh_left_1" file="legs_1_left_leg_1_belt_thigh_left_1.stl"/>
+    <mesh name="right_arm_1_x4_1_outer_1" file="right_arm_1_x4_1_outer_1.stl"/>
+    <mesh name="left_arm_2_x4_1_outer_1" file="left_arm_2_x4_1_outer_1.stl"/>
+    <mesh name="legs_1_right_leg_1_x10_1_outer_1" file="legs_1_right_leg_1_x10_1_outer_1.stl"/>
+    <mesh name="legs_1_right_leg_1_51t_hdt5_15mm_belt_knee_right_1" file="legs_1_right_leg_1_51t_hdt5_15mm_belt_knee_right_1.stl"/>
+    <mesh name="legs_1_left_leg_1_x10_2_outer_1" file="legs_1_left_leg_1_x10_2_outer_1.stl"/>
+    <mesh name="legs_1_left_leg_1_51t_hdt5_15mm_belt_knee_left_1" file="legs_1_left_leg_1_51t_hdt5_15mm_belt_knee_left_1.stl"/>
+    <mesh name="right_arm_1_x4_1_inner_1" file="right_arm_1_x4_1_inner_1.stl"/>
+    <mesh name="left_arm_2_x4_1_inner_1" file="left_arm_2_x4_1_inner_1.stl"/>
+    <mesh name="legs_1_right_leg_1_x10_1_inner_1" file="legs_1_right_leg_1_x10_1_inner_1.stl"/>
+    <mesh name="legs_1_right_leg_1_x10_1_pcb_1" file="legs_1_right_leg_1_x10_1_pcb_1.stl"/>
+    <mesh name="legs_1_right_leg_1_x6_1_outer_1" file="legs_1_right_leg_1_x6_1_outer_1.stl"/>
+    <mesh name="legs_1_right_leg_1_ankle_pulley_1" file="legs_1_right_leg_1_ankle_pulley_1.stl"/>
+    <mesh name="legs_1_left_leg_1_x10_2_inner_1" file="legs_1_left_leg_1_x10_2_inner_1.stl"/>
+    <mesh name="legs_1_left_leg_1_x10_2_pcb_1" file="legs_1_left_leg_1_x10_2_pcb_1.stl"/>
+    <mesh name="legs_1_left_leg_1_ankle_pulley_1" file="legs_1_left_leg_1_ankle_pulley_1.stl"/>
+    <mesh name="legs_1_left_leg_1_x6_1_outer_1" file="legs_1_left_leg_1_x6_1_outer_1.stl"/>
+    <mesh name="right_arm_1_hand_1_wrist_1" file="right_arm_1_hand_1_wrist_1.stl"/>
+    <mesh name="left_arm_2_hand_1_wrist_1" file="left_arm_2_hand_1_wrist_1.stl"/>
+    <mesh name="legs_1_right_leg_1_thigh_htd_5mm_44t_pulley_1" file="legs_1_right_leg_1_thigh_htd_5mm_44t_pulley_1.stl"/>
+    <mesh name="legs_1_right_leg_1_x6_1_inner_1" file="legs_1_right_leg_1_x6_1_inner_1.stl"/>
+    <mesh name="legs_1_right_leg_1_x6_1_pcb_1" file="legs_1_right_leg_1_x6_1_pcb_1.stl"/>
+    <mesh name="legs_1_right_leg_1_ankle_1" file="legs_1_right_leg_1_ankle_1.stl"/>
+    <mesh name="legs_1_left_leg_1_thigh_htd_5mm_44t_pulley_1" file="legs_1_left_leg_1_thigh_htd_5mm_44t_pulley_1.stl"/>
+    <mesh name="legs_1_left_leg_1_ankle_1" file="legs_1_left_leg_1_ankle_1.stl"/>
+    <mesh name="legs_1_left_leg_1_x6_1_inner_1" file="legs_1_left_leg_1_x6_1_inner_1.stl"/>
+    <mesh name="legs_1_left_leg_1_x6_1_pcb_1" file="legs_1_left_leg_1_x6_1_pcb_1.stl"/>
+    <mesh name="right_arm_1_hand_1_x4_1_pcb_1" file="right_arm_1_hand_1_x4_1_pcb_1.stl"/>
+    <mesh name="left_arm_2_hand_1_x4_1_pcb_1" file="left_arm_2_hand_1_x4_1_pcb_1.stl"/>
+    <mesh name="legs_1_right_leg_1_calf_pulley_1" file="legs_1_right_leg_1_calf_pulley_1.stl"/>
+    <mesh name="legs_1_right_leg_1_x4_1_inner_1" file="legs_1_right_leg_1_x4_1_inner_1.stl"/>
+    <mesh name="legs_1_left_leg_1_x4_1_inner_1" file="legs_1_left_leg_1_x4_1_inner_1.stl"/>
+    <mesh name="legs_1_left_leg_1_calf_pulley_1" file="legs_1_left_leg_1_calf_pulley_1.stl"/>
+    <mesh name="right_arm_1_hand_1_x4_1_outer_1" file="right_arm_1_hand_1_x4_1_outer_1.stl"/>
+    <mesh name="left_arm_2_hand_1_x4_1_outer_1" file="left_arm_2_hand_1_x4_1_outer_1.stl"/>
+    <mesh name="legs_1_right_leg_1_x4_1_outer_1" file="legs_1_right_leg_1_x4_1_outer_1.stl"/>
+    <mesh name="legs_1_left_leg_1_x4_1_outer_1" file="legs_1_left_leg_1_x4_1_outer_1.stl"/>
+    <mesh name="right_arm_1_hand_1_x4_1_inner_1" file="right_arm_1_hand_1_x4_1_inner_1.stl"/>
+    <mesh name="left_arm_2_hand_1_x4_1_inner_1" file="left_arm_2_hand_1_x4_1_inner_1.stl"/>
+    <mesh name="legs_1_right_leg_1_x4_1_pcb_1" file="legs_1_right_leg_1_x4_1_pcb_1.stl"/>
+    <mesh name="legs_1_left_leg_1_x4_1_pcb_1" file="legs_1_left_leg_1_x4_1_pcb_1.stl"/>
+    <mesh name="right_arm_1_hand_1_mount_1" file="right_arm_1_hand_1_mount_1.stl"/>
+    <mesh name="left_arm_2_hand_1_mount_1" file="left_arm_2_hand_1_mount_1.stl"/>
+    <mesh name="legs_1_right_leg_1_foot_1" file="legs_1_right_leg_1_foot_1.stl"/>
+    <mesh name="legs_1_left_leg_1_foot_1" file="legs_1_left_leg_1_foot_1.stl"/>
+    <mesh name="right_arm_1_hand_1_base_1" file="right_arm_1_hand_1_base_1.stl"/>
+    <mesh name="right_arm_1_hand_1_x4_2_pcb_1" file="right_arm_1_hand_1_x4_2_pcb_1.stl"/>
+    <mesh name="left_arm_2_hand_1_base_1" file="left_arm_2_hand_1_base_1.stl"/>
+    <mesh name="left_arm_2_hand_1_x4_2_pcb_1" file="left_arm_2_hand_1_x4_2_pcb_1.stl"/>
+    <mesh name="legs_1_right_leg_1_rubber_1" file="legs_1_right_leg_1_rubber_1.stl"/>
+    <mesh name="legs_1_left_leg_1_rubber_1" file="legs_1_left_leg_1_rubber_1.stl"/>
+    <mesh name="right_arm_1_hand_1_slide_rail_1" file="right_arm_1_hand_1_slide_rail_1.stl"/>
+    <mesh name="right_arm_1_hand_1_slide_1" file="right_arm_1_hand_1_slide_1.stl"/>
+    <mesh name="right_arm_1_hand_1_slide_2" file="right_arm_1_hand_1_slide_2.stl"/>
+    <mesh name="right_arm_1_hand_1_camera_mount_1" file="right_arm_1_hand_1_camera_mount_1.stl"/>
+    <mesh name="right_arm_1_hand_1_x4_2_outer_1" file="right_arm_1_hand_1_x4_2_outer_1.stl"/>
+    <mesh name="left_arm_2_hand_1_slide_rail_1" file="left_arm_2_hand_1_slide_rail_1.stl"/>
+    <mesh name="left_arm_2_hand_1_slide_1" file="left_arm_2_hand_1_slide_1.stl"/>
+    <mesh name="left_arm_2_hand_1_slide_2" file="left_arm_2_hand_1_slide_2.stl"/>
+    <mesh name="left_arm_2_hand_1_camera_mount_1" file="left_arm_2_hand_1_camera_mount_1.stl"/>
+    <mesh name="left_arm_2_hand_1_x4_2_outer_1" file="left_arm_2_hand_1_x4_2_outer_1.stl"/>
+    <mesh name="right_arm_1_hand_1_rack_2" file="right_arm_1_hand_1_rack_2.stl"/>
+    <mesh name="right_arm_1_hand_1_rack_1" file="right_arm_1_hand_1_rack_1.stl"/>
+    <mesh name="right_arm_1_hand_1_x4_2_inner_1" file="right_arm_1_hand_1_x4_2_inner_1.stl"/>
+    <mesh name="left_arm_2_hand_1_rack_2" file="left_arm_2_hand_1_rack_2.stl"/>
+    <mesh name="left_arm_2_hand_1_rack_1" file="left_arm_2_hand_1_rack_1.stl"/>
+    <mesh name="left_arm_2_hand_1_x4_2_inner_1" file="left_arm_2_hand_1_x4_2_inner_1.stl"/>
+    <mesh name="right_arm_1_hand_1_gripper_1" file="right_arm_1_hand_1_gripper_1.stl"/>
+    <mesh name="right_arm_1_hand_1_gripper_2" file="right_arm_1_hand_1_gripper_2.stl"/>
+    <mesh name="right_arm_1_hand_1_spur_gear_(26_teeth)_1" file="right_arm_1_hand_1_spur_gear_(26_teeth)_1.stl"/>
+    <mesh name="left_arm_2_hand_1_gripper_1" file="left_arm_2_hand_1_gripper_1.stl"/>
+    <mesh name="left_arm_2_hand_1_gripper_2" file="left_arm_2_hand_1_gripper_2.stl"/>
+    <mesh name="left_arm_2_hand_1_spur_gear_(26_teeth)_1" file="left_arm_2_hand_1_spur_gear_(26_teeth)_1.stl"/>
+  </asset>
+  <asset>
+      <texture type="skybox" builtin="gradient" rgb1=".4 .5 .6" rgb2="0 0 0"
+          width="100" height="100"/>
+      <texture builtin="flat" height="1278" mark="cross" markrgb="1 1 1" name="texgeom" random="0.01" rgb1="0.8 0.6 0.4" rgb2="0.8 0.6 0.4" type="cube" width="127"/>
+      <texture builtin="checker" height="100" name="texplane" rgb1="0 0 0" rgb2="0.8 0.8 0.8" type="2d" width="100"/>
+      <material name="MatPlane" reflectance="0.5" shininess="1" specular="1" texrepeat="60 60" texture="texplane"/>
+      <material name="geom" texture="texgeom" texuniform="true"/>
+  </asset>
+  <default>
+    <joint armature="0.01" damping=".1" limited="true"/>
+    <geom conaffinity="0" condim="3" contype="1" density="1000" friction=".7 .1 .1" rgba="0.8 0.6 .4 1"/>
+  </default>
+  <option gravity="0 0 -9.8" integrator="RK4" timestep="0.002"/>
+  <worldbody>
+    <light cutoff="100" diffuse="1 1 1" dir="-0 0 -1.3" directional="true" exponent="1" pos="0 0 1.3" specular=".1 .1 .1"/>
+    <geom conaffinity="1" condim="3" name="floor" pos="0 0 -1.5" rgba="0.8 0.9 0.8 1" size="40 40 40" type="plane" material="MatPlane"/>
+    <body name="root" pos="-1.4 0 -.3" quat="1 0 0 1">
+
+      <joint armature="0" axis="0 -1 0" damping="0" limited="false" name="rootx" pos="0 0 -1.25" stiffness="0" type="slide"/>
+
+      <joint armature="0" axis="0 -1 0" damping="0" limited="false" name="rootxh" pos="0 0 -1.25" stiffness="0" type="hinge"/>
+
+      <joint armature="0" axis="0 0 1" damping="0" limited="false" name="rootz" pos="0 0 -1.25" ref="1.25" stiffness="0" type="slide"/>
+ 
+      <!-- <joint armature="0" axis="0 0 1" damping="0" limited="false" name="rootzh" pos="0 0 -1.25" ref="1.25" stiffness="0" type="hinge"/> -->
+ 
+      <!-- <joint armature="0" axis="1 0 0" damping="0" limited="false" name="rooty" pos="0 0 0" stiffness="0" type="hinge"/> -->
+
+      <joint armature="0" axis="1 0 0" damping="0" limited="false" name="rootys" pos="0 0 0" stiffness="0" type="slide"/>
+
+      <!-- <joint type="free"/> -->
+
+      <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.615686 0.811765 0.929412 0.501961" mesh="torso_1_top_torso_1"/>
+      <geom type="mesh" rgba="0.615686 0.811765 0.929412 0.501961" mesh="torso_1_top_torso_1"/>
+      <geom pos="0.0160579 0.0593235 0.0498109" quat="0 -2.32051e-08 1 -2.32051e-08" type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.972549 0.529412 0.00392157 0.501961" mesh="head_1_x4_1_pcb_1"/>
+      <geom pos="0.0160579 0.0593235 0.0498109" quat="0 -2.32051e-08 1 -2.32051e-08" type="mesh" rgba="0.972549 0.529412 0.00392157 0.501961" mesh="head_1_x4_1_pcb_1"/>
+      <geom pos="0.000148008 0.0434136 0.0633109" quat="2.32051e-08 0 -4.64102e-08 -1" type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.768627 0.886275 0.952941 0.501961" mesh="head_1_x4_1_outer_1"/>
+      <geom pos="0.000148008 0.0434136 0.0633109" quat="2.32051e-08 0 -4.64102e-08 -1" type="mesh" rgba="0.768627 0.886275 0.952941 0.501961" mesh="head_1_x4_1_outer_1"/>
+      <geom pos="-0.0870555 0.0664737 -0.0301332" quat="0.379928 -0.596368 0.596368 -0.379928" type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.917647 0.917647 0.917647 0.501961" mesh="right_arm_1_x8_1_outer_1"/>
+      <geom pos="-0.0870555 0.0664737 -0.0301332" quat="0.379928 -0.596368 0.596368 -0.379928" type="mesh" rgba="0.917647 0.917647 0.917647 0.501961" mesh="right_arm_1_x8_1_outer_1"/>
+      <geom pos="-0.0766223 0.032495 -0.00775921" quat="0.596368 0.379928 -0.379928 -0.596368" type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.768627 0.886275 0.952941 0.501961" mesh="right_arm_1_x8_1_pcb_1"/>
+      <geom pos="-0.0766223 0.032495 -0.00775921" quat="0.596368 0.379928 -0.379928 -0.596368" type="mesh" rgba="0.768627 0.886275 0.952941 0.501961" mesh="right_arm_1_x8_1_pcb_1"/>
+      <geom pos="0.0870988 0.0664737 -0.0302898" quat="0.379928 -0.596368 -0.596368 0.379928" type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.917647 0.917647 0.917647 0.501961" mesh="left_arm_2_x8_1_outer_1"/>
+      <geom pos="0.0870988 0.0664737 -0.0302898" quat="0.379928 -0.596368 -0.596368 0.379928" type="mesh" rgba="0.917647 0.917647 0.917647 0.501961" mesh="left_arm_2_x8_1_outer_1"/>
+      <geom pos="0.0766657 0.032495 -0.00791584" quat="0.596368 0.379928 0.379928 0.596368" type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.768627 0.886275 0.952941 0.501961" mesh="left_arm_2_x8_1_pcb_1"/>
+      <geom pos="0.0766657 0.032495 -0.00791584" quat="0.596368 0.379928 0.379928 0.596368" type="mesh" rgba="0.768627 0.886275 0.952941 0.501961" mesh="left_arm_2_x8_1_pcb_1"/>
+      <geom pos="-0.0521972 0.0576546 -0.0517891" quat="-2.32051e-08 1 0 0" type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.615686 0.811765 0.929412 0.501961" mesh="torso_1_bottom_torso_1"/>
+      <geom pos="-0.0521972 0.0576546 -0.0517891" quat="-2.32051e-08 1 0 0" type="mesh" rgba="0.615686 0.811765 0.929412 0.501961" mesh="torso_1_bottom_torso_1"/>
+      <geom pos="0.101188 0.070595 -0.0581391" quat="0.707107 0.707107 0 0" type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.647059 0.647059 0.647059 0.501961" mesh="torso_1_bottom_back_1"/>
+      <geom pos="0.101188 0.070595 -0.0581391" quat="0.707107 0.707107 0 0" type="mesh" rgba="0.647059 0.647059 0.647059 0.501961" mesh="torso_1_bottom_back_1"/>
+      <geom pos="0.0339639 0.0573548 -0.267689" quat="-1 -4.64102e-08 0 0" type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.917647 0.917647 0.917647 0.501961" mesh="torso_1_x8_1_outer_1"/>
+      <geom pos="0.0339639 0.0573548 -0.267689" quat="-1 -4.64102e-08 0 0" type="mesh" rgba="0.917647 0.917647 0.917647 0.501961" mesh="torso_1_x8_1_outer_1"/>
+      <geom pos="-1.4863e-05 0.0326678 -0.267689" quat="6.96153e-08 -1 0 0" type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.768627 0.886275 0.952941 0.501961" mesh="torso_1_x8_1_pcb_1"/>
+      <geom pos="-1.4863e-05 0.0326678 -0.267689" quat="6.96153e-08 -1 0 0" type="mesh" rgba="0.768627 0.886275 0.952941 0.501961" mesh="torso_1_x8_1_pcb_1"/>
+      <geom pos="0.0457081 0.070595 0.0448109" quat="0.707107 0.707107 0 0" type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.647059 0.647059 0.647059 0.501961" mesh="torso_1_top_back_1"/>
+      <geom pos="0.0457081 0.070595 0.0448109" quat="0.707107 0.707107 0 0" type="mesh" rgba="0.647059 0.647059 0.647059 0.501961" mesh="torso_1_top_back_1"/>
+      <geom pos="-1.4862e-05 0.095595 0.00363456" quat="0.707107 0.707107 0 0" type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.615686 0.811765 0.929412 0.501961" mesh="torso_1_battery_mount_1"/>
+      <geom pos="-1.4862e-05 0.095595 0.00363456" quat="0.707107 0.707107 0 0" type="mesh" rgba="0.615686 0.811765 0.929412 0.501961" mesh="torso_1_battery_mount_1"/>
+      <geom pos="-1.4862e-05 0.101945 -0.0860179" quat="0.707107 0.707107 0 0" type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.654902 0.584314 0.823529 0.501961" mesh="torso_1_battery_1"/>
+      <geom pos="-1.4862e-05 0.101945 -0.0860179" quat="0.707107 0.707107 0 0" type="mesh" rgba="0.654902 0.584314 0.823529 0.501961" mesh="torso_1_battery_1"/>
+      <body name="link_head_1_x4_1_inner_1" pos="0.000148008 0.0434136 0.0633109" quat="0 2.32051e-08 -1 6.96153e-08">
+        <inertial pos="-0.00744646 -0.0108504 -0.0772508" quat="0.945239 -0.104673 0.0326989 -0.307406" mass="0.378625" diaginertia="0.00114879 0.001103 0.000191269"/>
+        <joint name="joint_head_1_x4_1_dof_x4" pos="0 0 0" axis="0 0 1" range="-2.51327 0.628319"/>
+        <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.972549 0.529412 0.00392157 0.501961" mesh="head_1_x4_1_inner_1"/>
+        <geom type="mesh" rgba="0.972549 0.529412 0.00392157 0.501961" mesh="head_1_x4_1_inner_1"/>
+        <geom pos="0.0105058 0.00467747 -0.0345" quat="-2.32051e-08 1 0 0" type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.980392 0.713726 0.00392157 0.501961" mesh="head_1_neck_1"/>
+        <geom pos="0.0105058 0.00467747 -0.0345" quat="-2.32051e-08 1 0 0" type="mesh" rgba="0.980392 0.713726 0.00392157 0.501961" mesh="head_1_neck_1"/>
+        <geom pos="-0.0153423 -0.0481844 -0.10559" quat="0.672498 0.672499 -0.218508 -0.218508" type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.972549 0.529412 0.00392157 0.501961" mesh="head_1_x4_2_pcb_1"/>
+        <geom pos="-0.0153423 -0.0481844 -0.10559" quat="0.672498 0.672499 -0.218508 -0.218508" type="mesh" rgba="0.972549 0.529412 0.00392157 0.501961" mesh="head_1_x4_2_pcb_1"/>
+        <geom pos="-0.0202786 -0.0279111 -0.1215" quat="-0.672499 0.672498 -0.218508 0.218508" type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.768627 0.886275 0.952941 0.501961" mesh="head_1_x4_2_outer_1"/>
+        <geom pos="-0.0202786 -0.0279111 -0.1215" quat="-0.672499 0.672498 -0.218508 0.218508" type="mesh" rgba="0.768627 0.886275 0.952941 0.501961" mesh="head_1_x4_2_outer_1"/>
+        <body name="link_head_1_x4_2_inner_1" pos="-0.0202786 -0.0279111 -0.1215" quat="-0.672498 -0.672499 0.218508 0.218508">
+          <inertial pos="0.0155867 -0.00787607 -0.0301039" quat="0.557659 -0.0414292 -0.020174 0.82879" mass="0.448707" diaginertia="0.00223063 0.00181085 0.00144009"/>
+          <joint name="joint_head_1_x4_2_dof_x4" pos="0 0 0" axis="0 0 1" range="-1.5708 0.261799"/>
+          <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.972549 0.529412 0.00392157 0.501961" mesh="head_1_x4_2_inner_1"/>
+          <geom type="mesh" rgba="0.972549 0.529412 0.00392157 0.501961" mesh="head_1_x4_2_inner_1"/>
+          <geom pos="-0.0093037 0.00675953 -0.0345" quat="-2.32051e-08 1 0 0" type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.615686 0.811765 0.929412 0.501961" mesh="head_1_head_1"/>
+          <geom pos="-0.0093037 0.00675953 -0.0345" quat="-2.32051e-08 1 0 0" type="mesh" rgba="0.615686 0.811765 0.929412 0.501961" mesh="head_1_head_1"/>
+          <geom pos="0.0977128 -0.027002 -0.0818784" quat="-0.706138 0.0370071 0.706138 0.0370071" type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.615686 0.811765 0.929412 0.501961" mesh="head_1_eye_1"/>
+          <geom pos="0.0977128 -0.027002 -0.0818784" quat="-0.706138 0.0370071 0.706138 0.0370071" type="mesh" rgba="0.615686 0.811765 0.929412 0.501961" mesh="head_1_eye_1"/>
+          <geom pos="0.0977128 -0.027002 0.0128784" quat="-0.706138 0.0370071 0.706138 0.0370071" type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.615686 0.811765 0.929412 0.501961" mesh="head_1_eye_2"/>
+          <geom pos="0.0977128 -0.027002 0.0128784" quat="-0.706138 0.0370071 0.706138 0.0370071" type="mesh" rgba="0.615686 0.811765 0.929412 0.501961" mesh="head_1_eye_2"/>
+        </body>
+      </body>
+      <body name="link_torso_1_x8_1_inner_1" pos="-1.4863e-05 0.0326678 -0.267689" quat="-1 -4.64102e-08 0 0">
+        <inertial pos="0 0.102953 -0.0995946" quat="0.250456 0.661265 0.250456 0.661265" mass="1.82904" diaginertia="0.0163921 0.0134978 0.00521708"/>
+
+        <!-- comment this joint out to avoid pelvic swivel-->
+        <!-- <joint name="joint_torso_1_x8_1_dof_x8" pos="0 0 0" axis="0 0 1" range="-0.785398 0.785398"/> -->
+        
+        <geom type="mesh" rgba="0.972549 0.529412 0.00392157 0.501961" mesh="torso_1_x8_1_inner_1"/>
+        <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.972549 0.529412 0.00392157 0.501961" mesh="torso_1_x8_1_inner_1"/>
+        <geom pos="0 -0.0155 -0.033" quat="-2.32051e-08 1 0 0" type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.615686 0.811765 0.929412 0.501961" mesh="legs_1_hips_1"/>
+        <geom pos="0 -0.0155 -0.033" quat="-2.32051e-08 1 0 0" type="mesh" rgba="0.615686 0.811765 0.929412 0.501961" mesh="legs_1_hips_1"/>
+        <geom pos="-0.0608313 0.1301 -0.0768637" quat="0.707107 0.707107 0 0" type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.917647 0.917647 0.917647 0.501961" mesh="legs_1_x8_1_outer_1"/>
+        <geom pos="-0.0608313 0.1301 -0.0768637" quat="0.707107 0.707107 0 0" type="mesh" rgba="0.917647 0.917647 0.917647 0.501961" mesh="legs_1_x8_1_outer_1"/>
+        <geom pos="-0.0855183 0.1301 -0.110842" quat="0.5 0.5 -0.5 0.5" type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.768627 0.886275 0.952941 0.501961" mesh="legs_1_x8_1_pcb_1"/>
+        <geom pos="-0.0855183 0.1301 -0.110842" quat="0.5 0.5 -0.5 0.5" type="mesh" rgba="0.768627 0.886275 0.952941 0.501961" mesh="legs_1_x8_1_pcb_1"/>
+        <geom pos="0.0608313 0.1301 -0.144821" quat="0.707107 0.707107 0 0" type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.917647 0.917647 0.917647 0.501961" mesh="legs_1_x8_2_outer_1"/>
+        <geom pos="0.0608313 0.1301 -0.144821" quat="0.707107 0.707107 0 0" type="mesh" rgba="0.917647 0.917647 0.917647 0.501961" mesh="legs_1_x8_2_outer_1"/>
+        <geom pos="0.0855183 0.1301 -0.110842" quat="0.5 0.5 0.5 -0.5" type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.768627 0.886275 0.952941 0.501961" mesh="legs_1_x8_2_pcb_1"/>
+        <geom pos="0.0855183 0.1301 -0.110842" quat="0.5 0.5 0.5 -0.5" type="mesh" rgba="0.768627 0.886275 0.952941 0.501961" mesh="legs_1_x8_2_pcb_1"/>
+        <body name="link_legs_1_x8_1_inner_1" pos="-0.0855183 0.1301 -0.110842" quat="-0.5 0.5 0.5 0.5">
+          <inertial pos="0.0140018 0.00808403 -0.0842001" quat="0.962351 0.0222451 -0.0830197 0.257864" mass="0.908312" diaginertia="0.00190538 0.00152405 0.000844537"/>
+          <joint name="joint_legs_1_x8_1_dof_x8" pos="0 0 0" axis="0 0 1" range="-0.523599 0.261799"/>
+          <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.972549 0.529412 0.00392157 0.501961" mesh="legs_1_x8_1_inner_1"/>
+          <geom type="mesh" rgba="0.972549 0.529412 0.00392157 0.501961" mesh="legs_1_x8_1_inner_1"/>
+          <geom pos="0.0134234 0.00775 -0.033" quat="-2.32051e-08 1 0 0" type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.917647 0.917647 0.917647 0.501961" mesh="legs_1_right_leg_1_hip_rotate_1"/>
+          <geom pos="0.0134234 0.00775 -0.033" quat="-2.32051e-08 1 0 0" type="mesh" rgba="0.917647 0.917647 0.917647 0.501961" mesh="legs_1_right_leg_1_hip_rotate_1"/>
+          <geom pos="0.0115895 0.0459264 -0.073313" quat="0.353553 0.353553 0.612372 0.612372" type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.917647 0.917647 0.917647 0.501961" mesh="legs_1_right_leg_1_x8_1_outer_1"/>
+          <geom pos="0.0115895 0.0459264 -0.073313" quat="0.353553 0.353553 0.612372 0.612372" type="mesh" rgba="0.917647 0.917647 0.917647 0.501961" mesh="legs_1_right_leg_1_x8_1_outer_1"/>
+          <geom pos="0.0285788 0.0165 -0.098" quat="-0.353553 0.353553 0.612372 -0.612372" type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.768627 0.886275 0.952941 0.501961" mesh="legs_1_right_leg_1_x8_1_pcb_1"/>
+          <geom pos="0.0285788 0.0165 -0.098" quat="-0.353553 0.353553 0.612372 -0.612372" type="mesh" rgba="0.768627 0.886275 0.952941 0.501961" mesh="legs_1_right_leg_1_x8_1_pcb_1"/>
+          <body name="link_legs_1_right_leg_1_x8_1_inner_1" pos="0.0285788 0.0165 -0.098" quat="0.353553 0.353553 0.612372 0.612372">
+            <inertial pos="-0.0381684 -0.0218296 -0.131938" quat="0.956449 -0.0374925 0.132817 0.257216" mass="1.31108" diaginertia="0.0052709 0.00407854 0.00216855"/>
+            <joint name="joint_legs_1_right_leg_1_x8_1_dof_x8" pos="0 0 0" axis="0 0 1" range="-1.5708 0.523599"/>
+            <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.972549 0.529412 0.00392157 0.501961" mesh="legs_1_right_leg_1_x8_1_inner_1"/>
+            <geom type="mesh" rgba="0.972549 0.529412 0.00392157 0.501961" mesh="legs_1_right_leg_1_x8_1_inner_1"/>
+            <geom pos="0.0134234 -0.00775 -0.033" quat="-2.32051e-08 1 0 0" type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.917647 0.917647 0.917647 0.501961" mesh="legs_1_right_leg_1_thigh_rotate_right_1"/>
+            <geom pos="0.0134234 -0.00775 -0.033" quat="-2.32051e-08 1 0 0" type="mesh" rgba="0.917647 0.917647 0.917647 0.501961" mesh="legs_1_right_leg_1_thigh_rotate_right_1"/>
+            <geom pos="-0.0670253 -0.0199089 -0.099594" quat="-0.612372 0.612372 -0.353553 0.353553" type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.972549 0.529412 0.00392157 0.501961" mesh="legs_1_right_leg_1_x10_2_outer_1"/>
+            <geom pos="-0.0670253 -0.0199089 -0.099594" quat="-0.612372 0.612372 -0.353553 0.353553" type="mesh" rgba="0.972549 0.529412 0.00392157 0.501961" mesh="legs_1_right_leg_1_x10_2_outer_1"/>
+            <geom pos="-0.0588363 -0.0340925 -0.15" quat="-0.683013 0.183013 -0.683013 -0.183013" type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.498039 0.498039 0.498039 0.501961" mesh="legs_1_right_leg_1_x10_2_pcb_1"/>
+            <geom pos="-0.0588363 -0.0340925 -0.15" quat="-0.683013 0.183013 -0.683013 -0.183013" type="mesh" rgba="0.498039 0.498039 0.498039 0.501961" mesh="legs_1_right_leg_1_x10_2_pcb_1"/>
+            <body name="link_legs_1_right_leg_1_x10_2_inner_1" pos="-0.0588363 -0.0340925 -0.15" quat="-0.183013 -0.683013 -0.183013 0.683013">
+              <inertial pos="0.000810481 0.00781592 -0.0859719" quat="0.663351 0.725084 -0.173623 -0.0638177" mass="1.44417" diaginertia="0.0038947 0.00374817 0.00278785"/>
+              <joint name="joint_legs_1_right_leg_1_x10_2_dof_x10" pos="0 0 0" axis="0 0 1" range="-2.35619 0.785398"/>
+              <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.980392 0.713726 0.00392157 0.501961" mesh="legs_1_right_leg_1_x10_2_inner_1"/>
+              <geom type="mesh" rgba="0.980392 0.713726 0.00392157 0.501961" mesh="legs_1_right_leg_1_x10_2_inner_1"/>
+              <geom pos="0 -0.018 -0.0405" quat="-2.32051e-08 1 0 0" type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.647059 0.647059 0.647059 0.501961" mesh="legs_1_right_leg_1_belt_thigh_right_1"/>
+              <geom pos="0 -0.018 -0.0405" quat="-2.32051e-08 1 0 0" type="mesh" rgba="0.647059 0.647059 0.647059 0.501961" mesh="legs_1_right_leg_1_belt_thigh_right_1"/>
+              <geom pos="0.00554001 -0.0527097 -0.118" quat="-0.866025 -4.01924e-08 0 -0.5" type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.972549 0.529412 0.00392157 0.501961" mesh="legs_1_right_leg_1_x10_1_outer_1"/>
+              <geom pos="0.00554001 -0.0527097 -0.118" quat="-0.866025 -4.01924e-08 0 -0.5" type="mesh" rgba="0.972549 0.529412 0.00392157 0.501961" mesh="legs_1_right_leg_1_x10_1_outer_1"/>
+              <geom pos="-2.0548e-09 3.85337e-09 -0.118" quat="-0.258819 -2.84203e-08 2.84203e-08 -0.965926" type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.498039 0.498039 0.498039 0.501961" mesh="legs_1_right_leg_1_x10_1_pcb_1"/>
+              <geom pos="-2.0548e-09 3.85337e-09 -0.118" quat="-0.258819 -2.84203e-08 2.84203e-08 -0.965926" type="mesh" rgba="0.498039 0.498039 0.498039 0.501961" mesh="legs_1_right_leg_1_x10_1_pcb_1"/>
+              <body name="link_legs_1_right_leg_1_x10_1_inner_1" pos="-2.0548e-09 3.85337e-09 -0.118" quat="3.44263e-08 -0.258819 -0.965926 -6.00592e-09">
+                <inertial pos="0 4.86565e-11 -0.023577" mass="0.202574" diaginertia="7.56752e-05 7.56752e-05 6.53659e-05"/>
+                <joint name="joint_legs_1_right_leg_1_x10_1_dof_x10" pos="0 0 0" axis="0 0 1" range="0 1.5708"/>
+                <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.980392 0.713726 0.00392157 0.501961" mesh="legs_1_right_leg_1_x10_1_inner_1"/>
+                <geom type="mesh" rgba="0.980392 0.713726 0.00392157 0.501961" mesh="legs_1_right_leg_1_x10_1_inner_1"/>
+                <geom pos="0 0.018 -0.0405" quat="-2.32051e-08 1 0 0" type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.917647 0.917647 0.917647 0.501961" mesh="legs_1_right_leg_1_thigh_htd_5mm_44t_pulley_1"/>
+                <geom pos="0 0.018 -0.0405" quat="-2.32051e-08 1 0 0" type="mesh" rgba="0.917647 0.917647 0.917647 0.501961" mesh="legs_1_right_leg_1_thigh_htd_5mm_44t_pulley_1"/>
+              </body>
+              <body name="link_legs_1_right_leg_1_51t_hdt5_15mm_belt_knee_right_1" pos="0.0906636 0.157034 -0.0795" quat="-0.866025 -4.01924e-08 0 -0.5">
+                <inertial pos="0.0679452 -0.0350218 0.0362612" quat="0.999218 0.0193612 0.00362833 -0.0342747" mass="0.559579" diaginertia="0.00192172 0.00164878 0.000504209"/>
+                <joint name="joint_legs_1_right_leg_1_knee_revolute" pos="0 0 0" axis="0 0 -1" range="0 1.5708"/>
+                <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.647059 0.647059 0.647059 0.501961" mesh="legs_1_right_leg_1_51t_hdt5_15mm_belt_knee_right_1"/>
+                <geom type="mesh" rgba="0.647059 0.647059 0.647059 0.501961" mesh="legs_1_right_leg_1_51t_hdt5_15mm_belt_knee_right_1"/>
+                <geom pos="0.0393231 -0.032 0.0535" quat="-1.64085e-08 0.707107 0.707107 -1.64085e-08" type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.972549 0.529412 0.00392157 0.501961" mesh="legs_1_right_leg_1_x6_1_outer_1"/>
+                <geom pos="0.0393231 -0.032 0.0535" quat="-1.64085e-08 0.707107 0.707107 -1.64085e-08" type="mesh" rgba="0.972549 0.529412 0.00392157 0.501961" mesh="legs_1_right_leg_1_x6_1_outer_1"/>
+                <geom pos="0.0705 -0.05 0.0535" quat="-2.00962e-08 -0.5 0.866025 1.16026e-08" type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.980392 0.713726 0.00392157 0.501961" mesh="legs_1_right_leg_1_x6_1_pcb_1"/>
+                <geom pos="0.0705 -0.05 0.0535" quat="-2.00962e-08 -0.5 0.866025 1.16026e-08" type="mesh" rgba="0.980392 0.713726 0.00392157 0.501961" mesh="legs_1_right_leg_1_x6_1_pcb_1"/>
+                <body name="link_legs_1_right_leg_1_x6_1_inner_1" pos="0.0705 -0.05 0.0535" quat="0.5 -8.49366e-09 -8.49366e-09 -0.866025">
+                  <inertial pos="0 3.95644e-11 -0.018645" mass="0.0593673" diaginertia="1.1524e-05 1.1524e-05 6.74838e-06"/>
+                  <joint name="joint_legs_1_right_leg_1_x6_1_dof_x6" pos="0 0 0" axis="0 0 1" range="-1.5708 1.5708"/>
+                  <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.498039 0.498039 0.498039 0.501961" mesh="legs_1_right_leg_1_x6_1_inner_1"/>
+                  <geom type="mesh" rgba="0.498039 0.498039 0.498039 0.501961" mesh="legs_1_right_leg_1_x6_1_inner_1"/>
+                  <geom pos="0.00575 -0.00995929 -0.0325" quat="-2.32051e-08 1 0 0" type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.972549 0.529412 0.00392157 0.501961" mesh="legs_1_right_leg_1_calf_pulley_1"/>
+                  <geom pos="0.00575 -0.00995929 -0.0325" quat="-2.32051e-08 1 0 0" type="mesh" rgba="0.972549 0.529412 0.00392157 0.501961" mesh="legs_1_right_leg_1_calf_pulley_1"/>
+                </body>
+                <body name="link_legs_1_right_leg_1_ankle_pulley_1" pos="0.24 -0.05 0" quat="0.707107 0 0 0.707107">
+                  <inertial pos="0.0583897 -0.0586158 0.011872" quat="0.192623 0.677851 -0.19408 0.682457" mass="0.219424" diaginertia="0.000465235 0.000425441 8.66288e-05"/>
+                  <joint name="joint_legs_1_right_leg_1_ankle_revolute" pos="0 0 0" axis="0 0 1" range="-0.785398 0.785398"/>
+                  <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.615686 0.811765 0.929412 0.501961" mesh="legs_1_right_leg_1_ankle_pulley_1"/>
+                  <geom type="mesh" rgba="0.615686 0.811765 0.929412 0.501961" mesh="legs_1_right_leg_1_ankle_pulley_1"/>
+                  <geom pos="0 -0.0270536 0.002" quat="-2.32051e-08 1 0 0" type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.647059 0.647059 0.647059 0.501961" mesh="legs_1_right_leg_1_ankle_1"/>
+                  <geom pos="0 -0.0270536 0.002" quat="-2.32051e-08 1 0 0" type="mesh" rgba="0.647059 0.647059 0.647059 0.501961" mesh="legs_1_right_leg_1_ankle_1"/>
+                  <geom pos="0.0645536 -0.0663036 0.00154071" quat="0.5 0.5 0.5 0.5" type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.972549 0.529412 0.00392157 0.501961" mesh="legs_1_right_leg_1_x4_1_inner_1"/>
+                  <geom pos="0.0645536 -0.0663036 0.00154071" quat="0.5 0.5 0.5 0.5" type="mesh" rgba="0.972549 0.529412 0.00392157 0.501961" mesh="legs_1_right_leg_1_x4_1_inner_1"/>
+                  <body name="link_legs_1_right_leg_1_x4_1_outer_1" pos="0.0990536 -0.070981 0.0120465" quat="0.707107 3.53553e-08 0.707107 1.64085e-08">
+                    <inertial pos="1.40239e-09 -0.0149273 -0.046385" quat="0.580421 0.40387 0.58042 0.403873" mass="0.390442" diaginertia="0.00151219 0.000952394 0.000741182"/>
+                    <joint name="joint_legs_1_right_leg_1_x4_1_dof_x4" pos="0 0 0" axis="0 0 1" range="-0.785398 0.785398"/>
+                    <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.768627 0.886275 0.952941 0.501961" mesh="legs_1_right_leg_1_x4_1_outer_1"/>
+                    <geom type="mesh" rgba="0.768627 0.886275 0.952941 0.501961" mesh="legs_1_right_leg_1_x4_1_outer_1"/>
+                    <geom quat="-2.32051e-08 1 0 0" type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.972549 0.529412 0.00392157 0.501961" mesh="legs_1_right_leg_1_x4_1_pcb_1"/>
+                    <geom quat="-2.32051e-08 1 0 0" type="mesh" rgba="0.972549 0.529412 0.00392157 0.501961" mesh="legs_1_right_leg_1_x4_1_pcb_1"/>
+                    <geom pos="-0.0159099 0.0159099 0.0135" quat="-1 -4.64102e-08 0 0" type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.615686 0.811765 0.929412 0.501961" mesh="legs_1_right_leg_1_foot_1"/>
+                    <geom pos="-0.0159099 0.0159099 0.0135" quat="-1 -4.64102e-08 0 0" type="mesh" rgba="0.615686 0.811765 0.929412 0.501961" mesh="legs_1_right_leg_1_foot_1"/>
+                    <geom pos="2e-09 -0.037 -0.0853793" quat="1.64085e-08 1.64085e-08 -0.707107 -0.707107" type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.647059 0.647059 0.647059 0.501961" mesh="legs_1_right_leg_1_rubber_1"/>
+                    <geom pos="2e-09 -0.037 -0.0853793" quat="1.64085e-08 1.64085e-08 -0.707107 -0.707107" type="mesh" rgba="0.647059 0.647059 0.647059 0.501961" mesh="legs_1_right_leg_1_rubber_1"/>
+                  </body>
+                </body>
+              </body>
+            </body>
+          </body>
+        </body>
+        <body name="link_legs_1_x8_2_inner_1" pos="0.0855183 0.1301 -0.110842" quat="-0.5 0.5 -0.5 -0.5">
+          <inertial pos="-0.0140019 0.00808388 -0.0842001" quat="0.962352 0.0222457 0.0830195 -0.257859" mass="0.908312" diaginertia="0.00190538 0.00152405 0.000844537"/>
+          <joint name="joint_legs_1_x8_2_dof_x8" pos="0 0 0" axis="0 0 1" range="-0.261799 0.523599"/>
+          <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.972549 0.529412 0.00392157 0.501961" mesh="legs_1_x8_2_inner_1"/>
+          <geom type="mesh" rgba="0.972549 0.529412 0.00392157 0.501961" mesh="legs_1_x8_2_inner_1"/>
+          <geom pos="-0.0134234 0.00775 -0.033" quat="-2.32051e-08 1 0 0" type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.917647 0.917647 0.917647 0.501961" mesh="legs_1_left_leg_1_hip_rotate_1"/>
+          <geom pos="-0.0134234 0.00775 -0.033" quat="-2.32051e-08 1 0 0" type="mesh" rgba="0.917647 0.917647 0.917647 0.501961" mesh="legs_1_left_leg_1_hip_rotate_1"/>
+          <geom pos="-0.0455682 -0.0129264 -0.073313" quat="-0.353553 0.353553 -0.612372 0.612372" type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.917647 0.917647 0.917647 0.501961" mesh="legs_1_left_leg_1_x8_1_outer_1"/>
+          <geom pos="-0.0455682 -0.0129264 -0.073313" quat="-0.353553 0.353553 -0.612372 0.612372" type="mesh" rgba="0.917647 0.917647 0.917647 0.501961" mesh="legs_1_left_leg_1_x8_1_outer_1"/>
+          <geom pos="-0.0285788 0.0165 -0.098" quat="-0.353553 0.353553 -0.612372 0.612372" type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.768627 0.886275 0.952941 0.501961" mesh="legs_1_left_leg_1_x8_1_pcb_1"/>
+          <geom pos="-0.0285788 0.0165 -0.098" quat="-0.353553 0.353553 -0.612372 0.612372" type="mesh" rgba="0.768627 0.886275 0.952941 0.501961" mesh="legs_1_left_leg_1_x8_1_pcb_1"/>
+          <body name="link_legs_1_left_leg_1_x8_1_inner_1" pos="-0.0285788 0.0165 -0.098" quat="-0.353553 -0.353553 0.612372 0.612372">
+            <inertial pos="0.0379892 0.02214 -0.131938" quat="0.956917 0.0339392 -0.133769 0.255467" mass="1.31108" diaginertia="0.0052709 0.00407854 0.00216855"/>
+            <joint name="joint_legs_1_left_leg_1_x8_1_dof_x8" pos="0 0 0" axis="0 0 1" range="-1.5708 0.523599"/>
+            <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.972549 0.529412 0.00392157 0.501961" mesh="legs_1_left_leg_1_x8_1_inner_1"/>
+            <geom type="mesh" rgba="0.972549 0.529412 0.00392157 0.501961" mesh="legs_1_left_leg_1_x8_1_inner_1"/>
+            <geom pos="0 -0.0155 -0.033" quat="-2.32051e-08 1 0 0" type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.917647 0.917647 0.917647 0.501961" mesh="legs_1_left_leg_1_thigh_rotate_left_1"/>
+            <geom pos="0 -0.0155 -0.033" quat="-2.32051e-08 1 0 0" type="mesh" rgba="0.917647 0.917647 0.917647 0.501961" mesh="legs_1_left_leg_1_thigh_rotate_left_1"/>
+            <geom pos="0.0671321 0.0197238 -0.099594" quat="0.612372 0.612372 -0.353553 -0.353553" type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.972549 0.529412 0.00392157 0.501961" mesh="legs_1_left_leg_1_x10_1_outer_1"/>
+            <geom pos="0.0671321 0.0197238 -0.099594" quat="0.612372 0.612372 -0.353553 -0.353553" type="mesh" rgba="0.972549 0.529412 0.00392157 0.501961" mesh="legs_1_left_leg_1_x10_1_outer_1"/>
+            <geom pos="0.0589432 0.0339075 -0.15" quat="0.183013 0.683013 0.183013 -0.683013" type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.498039 0.498039 0.498039 0.501961" mesh="legs_1_left_leg_1_x10_1_pcb_1"/>
+            <geom pos="0.0589432 0.0339075 -0.15" quat="0.183013 0.683013 0.183013 -0.683013" type="mesh" rgba="0.498039 0.498039 0.498039 0.501961" mesh="legs_1_left_leg_1_x10_1_pcb_1"/>
+            <body name="link_legs_1_left_leg_1_x10_1_inner_1" pos="0.0589432 0.0339075 -0.15" quat="-0.683013 0.183013 -0.683013 -0.183013">
+              <inertial pos="0.000810476 -0.00781594 -0.0859719" quat="0.707268 0.663631 0.0592053 0.236348" mass="1.44417" diaginertia="0.00387182 0.00374387 0.00281502"/>
+              <joint name="joint_legs_1_left_leg_1_x10_1_dof_x10" pos="0 0 0" axis="0 0 1" range="-0.785398 2.35619"/>
+              <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.980392 0.713726 0.00392157 0.501961" mesh="legs_1_left_leg_1_x10_1_inner_1"/>
+              <geom type="mesh" rgba="0.980392 0.713726 0.00392157 0.501961" mesh="legs_1_left_leg_1_x10_1_inner_1"/>
+              <geom pos="0.0155885 -0.009 -0.0405" quat="-2.32051e-08 1 0 0" type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.647059 0.647059 0.647059 0.501961" mesh="legs_1_left_leg_1_belt_thigh_left_1"/>
+              <geom pos="0.0155885 -0.009 -0.0405" quat="-2.32051e-08 1 0 0" type="mesh" rgba="0.647059 0.647059 0.647059 0.501961" mesh="legs_1_left_leg_1_belt_thigh_left_1"/>
+              <geom pos="0.00554001 0.0527097 -0.118" quat="-0.866025 -4.01924e-08 0 0.5" type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.972549 0.529412 0.00392157 0.501961" mesh="legs_1_left_leg_1_x10_2_outer_1"/>
+              <geom pos="0.00554001 0.0527097 -0.118" quat="-0.866025 -4.01924e-08 0 0.5" type="mesh" rgba="0.972549 0.529412 0.00392157 0.501961" mesh="legs_1_left_leg_1_x10_2_outer_1"/>
+              <geom pos="-2.6548e-09 3.34021e-09 -0.118" quat="-0.258819 -2.84203e-08 -2.84203e-08 0.965926" type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.498039 0.498039 0.498039 0.501961" mesh="legs_1_left_leg_1_x10_2_pcb_1"/>
+              <geom pos="-2.6548e-09 3.34021e-09 -0.118" quat="-0.258819 -2.84203e-08 -2.84203e-08 0.965926" type="mesh" rgba="0.498039 0.498039 0.498039 0.501961" mesh="legs_1_left_leg_1_x10_2_pcb_1"/>
+              <body name="link_legs_1_left_leg_1_x10_2_inner_1" pos="-2.6548e-09 3.34021e-09 -0.118" quat="3.44263e-08 -0.258819 0.965926 6.00592e-09">
+                <inertial pos="0 4.86565e-11 -0.023577" quat="0.707107 0 0 0.707107" mass="0.202574" diaginertia="7.56752e-05 7.56752e-05 6.53659e-05"/>
+                <joint name="joint_legs_1_left_leg_1_x10_2_dof_x10" pos="0 0 0" axis="0 0 1" range="0 1.5708"/>
+                <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.980392 0.713726 0.00392157 0.501961" mesh="legs_1_left_leg_1_x10_2_inner_1"/>
+                <geom type="mesh" rgba="0.980392 0.713726 0.00392157 0.501961" mesh="legs_1_left_leg_1_x10_2_inner_1"/>
+                <geom pos="-0.0155885 -0.009 -0.0405" quat="-2.32051e-08 1 0 0" type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.917647 0.917647 0.917647 0.501961" mesh="legs_1_left_leg_1_thigh_htd_5mm_44t_pulley_1"/>
+                <geom pos="-0.0155885 -0.009 -0.0405" quat="-2.32051e-08 1 0 0" type="mesh" rgba="0.917647 0.917647 0.917647 0.501961" mesh="legs_1_left_leg_1_thigh_htd_5mm_44t_pulley_1"/>
+              </body>
+              <body name="link_legs_1_left_leg_1_51t_hdt5_15mm_belt_knee_left_1" pos="0.0906636 -0.157034 -0.0795" quat="-0.866025 -4.01924e-08 0 0.5">
+                <inertial pos="0.067946 0.0350222 0.0362612" quat="0.999219 -0.0193638 0.00363195 0.0342627" mass="0.559579" diaginertia="0.00192173 0.00164878 0.000504218"/>
+                <joint name="joint_legs_1_left_leg_1_knee_revolute" pos="0 0 0" axis="0 0 -1" range="-1.5708 0"/>
+                <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.647059 0.647059 0.647059 0.501961" mesh="legs_1_left_leg_1_51t_hdt5_15mm_belt_knee_left_1"/>
+                <geom type="mesh" rgba="0.647059 0.647059 0.647059 0.501961" mesh="legs_1_left_leg_1_51t_hdt5_15mm_belt_knee_left_1"/>
+                <geom pos="0.0705 0.014 0.0535" quat="-1.64085e-08 0.707107 -0.707107 1.64085e-08" type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.972549 0.529412 0.00392157 0.501961" mesh="legs_1_left_leg_1_x6_1_outer_1"/>
+                <geom pos="0.0705 0.014 0.0535" quat="-1.64085e-08 0.707107 -0.707107 1.64085e-08" type="mesh" rgba="0.972549 0.529412 0.00392157 0.501961" mesh="legs_1_left_leg_1_x6_1_outer_1"/>
+                <geom pos="0.0705 0.05 0.0535" quat="-2.00962e-08 -0.5 -0.866025 -1.16026e-08" type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.980392 0.713726 0.00392157 0.501961" mesh="legs_1_left_leg_1_x6_1_pcb_1"/>
+                <geom pos="0.0705 0.05 0.0535" quat="-2.00962e-08 -0.5 -0.866025 -1.16026e-08" type="mesh" rgba="0.980392 0.713726 0.00392157 0.501961" mesh="legs_1_left_leg_1_x6_1_pcb_1"/>
+                <body name="link_legs_1_left_leg_1_ankle_pulley_1" pos="0.24 0.05 0" quat="0.707107 0 0 -0.707107">
+                  <inertial pos="0.0583897 0.0586158 0.011128" quat="-0.19408 0.682457 0.192623 0.677851" mass="0.219424" diaginertia="0.000465235 0.000425441 8.66288e-05"/>
+                  <joint name="joint_legs_1_left_leg_1_ankle_revolute" pos="0 0 0" axis="0 0 1" range="-0.785398 0.785398"/>
+                  <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.615686 0.811765 0.929412 0.501961" mesh="legs_1_left_leg_1_ankle_pulley_1"/>
+                  <geom type="mesh" rgba="0.615686 0.811765 0.929412 0.501961" mesh="legs_1_left_leg_1_ankle_pulley_1"/>
+                  <geom pos="0 0.0270536 0.021" type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.647059 0.647059 0.647059 0.501961" mesh="legs_1_left_leg_1_ankle_1"/>
+                  <geom pos="0 0.0270536 0.021" type="mesh" rgba="0.647059 0.647059 0.647059 0.501961" mesh="legs_1_left_leg_1_ankle_1"/>
+                  <geom pos="0.0645536 0.0663036 0.0214593" quat="0.5 -0.5 0.5 -0.5" type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.972549 0.529412 0.00392157 0.501961" mesh="legs_1_left_leg_1_x4_1_inner_1"/>
+                  <geom pos="0.0645536 0.0663036 0.0214593" quat="0.5 -0.5 0.5 -0.5" type="mesh" rgba="0.972549 0.529412 0.00392157 0.501961" mesh="legs_1_left_leg_1_x4_1_inner_1"/>
+                  <body name="link_legs_1_left_leg_1_x4_1_outer_1" pos="0.0990536 0.070981 0.0109535" quat="1.89469e-08 -0.707107 0 -0.707107">
+                    <inertial pos="1.40239e-09 -0.0149273 -0.046385" quat="0.580421 0.40387 0.58042 0.403873" mass="0.390442" diaginertia="0.00151219 0.000952394 0.000741182"/>
+                    <joint name="joint_legs_1_left_leg_1_x4_1_dof_x4" pos="0 0 0" axis="0 0 1" range="-0.785398 0.785398"/>
+                    <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.768627 0.886275 0.952941 0.501961" mesh="legs_1_left_leg_1_x4_1_outer_1"/>
+                    <geom type="mesh" rgba="0.768627 0.886275 0.952941 0.501961" mesh="legs_1_left_leg_1_x4_1_outer_1"/>
+                    <geom quat="-2.32051e-08 1 0 0" type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.972549 0.529412 0.00392157 0.501961" mesh="legs_1_left_leg_1_x4_1_pcb_1"/>
+                    <geom quat="-2.32051e-08 1 0 0" type="mesh" rgba="0.972549 0.529412 0.00392157 0.501961" mesh="legs_1_left_leg_1_x4_1_pcb_1"/>
+                    <geom pos="-0.0159099 0.0159099 0.0135" quat="-1 -4.64102e-08 0 0" type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.615686 0.811765 0.929412 0.501961" mesh="legs_1_left_leg_1_foot_1"/>
+                    <geom pos="-0.0159099 0.0159099 0.0135" quat="-1 -4.64102e-08 0 0" type="mesh" rgba="0.615686 0.811765 0.929412 0.501961" mesh="legs_1_left_leg_1_foot_1"/>
+                    <geom pos="2e-09 -0.037 -0.0853793" quat="1.64085e-08 1.64085e-08 -0.707107 -0.707107" type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.647059 0.647059 0.647059 0.501961" mesh="legs_1_left_leg_1_rubber_1"/>
+                    <geom pos="2e-09 -0.037 -0.0853793" quat="1.64085e-08 1.64085e-08 -0.707107 -0.707107" type="mesh" rgba="0.647059 0.647059 0.647059 0.501961" mesh="legs_1_left_leg_1_rubber_1"/>
+                  </body>
+                </body>
+                <body name="link_legs_1_left_leg_1_x6_1_inner_1" pos="0.0705 0.05 0.0535" quat="0.5 -8.49366e-09 8.49366e-09 0.866025">
+                  <inertial pos="0 3.95644e-11 -0.018645" quat="0.707107 0 0 0.707107" mass="0.0593673" diaginertia="1.1524e-05 1.1524e-05 6.74838e-06"/>
+                  <joint name="joint_legs_1_left_leg_1_x6_1_dof_x6" pos="0 0 0" axis="0 0 1" range="-1.5708 1.5708"/>
+                  <geom type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.498039 0.498039 0.498039 0.501961" mesh="legs_1_left_leg_1_x6_1_inner_1"/>
+                  <geom type="mesh" rgba="0.498039 0.498039 0.498039 0.501961" mesh="legs_1_left_leg_1_x6_1_inner_1"/>
+                  <geom pos="0.00575 0.00995929 -0.0325" quat="-2.32051e-08 1 0 0" type="mesh" contype="0" conaffinity="0" group="1" density="0" rgba="0.972549 0.529412 0.00392157 0.501961" mesh="legs_1_left_leg_1_calf_pulley_1"/>
+                  <geom pos="0.00575 0.00995929 -0.0325" quat="-2.32051e-08 1 0 0" type="mesh" rgba="0.972549 0.529412 0.00392157 0.501961" mesh="legs_1_left_leg_1_calf_pulley_1"/>
+                </body>
+              </body>
+            </body>
+          </body>
+        </body>
+      </body>
+    </body>
+  </worldbody>
+  <actuator>
+    <position inheritrange="1" kp="500" kv="35" joint="joint_legs_1_x8_1_dof_x8"/>
+    <position inheritrange="1" kp="200" kv="14" joint="joint_legs_1_right_leg_1_x8_1_dof_x8"/>
+    <position inheritrange="1" kp="200" kv="14" joint="joint_legs_1_right_leg_1_x10_2_dof_x10"/>
+    <position inheritrange="1" kp="100" kv="7" joint="joint_legs_1_right_leg_1_knee_revolute"/>
+    <position inheritrange="1" kp="100" kv="7" joint="joint_legs_1_right_leg_1_ankle_revolute"/>
+    <position inheritrange="1" kp="200" kv="14" joint="joint_legs_1_right_leg_1_x4_1_dof_x4"/>
+    <!-- <position inheritrange="1" kp="100" kv="7" joint="joint_legs_1_right_leg_1_x6_1_dof_x6"/> -->
+
+    <position inheritrange="1" kp="500" kv="35" joint="joint_legs_1_x8_2_dof_x8"/>
+    <position inheritrange="1" kp="200" kv="14" joint="joint_legs_1_left_leg_1_x8_1_dof_x8"/>
+    <position inheritrange="1" kp="200" kv="14" joint="joint_legs_1_left_leg_1_x10_1_dof_x10"/>
+    <position inheritrange="1" kp="100" kv="7" joint="joint_legs_1_left_leg_1_knee_revolute"/>
+    <position inheritrange="1" kp="100" kv="7" joint="joint_legs_1_left_leg_1_ankle_revolute"/>
+    <position inheritrange="1" kp="200" kv="14" joint="joint_legs_1_left_leg_1_x4_1_dof_x4"/>
+    <!-- <position inheritrange="1" kp="100" kv="7" joint="joint_legs_1_left_leg_1_x6_1_dof_x6"/> -->\
+  </actuator>
+</mujoco>
