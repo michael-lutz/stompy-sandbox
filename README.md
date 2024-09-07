@@ -1,5 +1,7 @@
 # Stompy's Sandbox
 
+This repository has been replaced with [KSim](https://github.com/kscalelabs/ksim)
+
 This repository provides a simple way to train and test RL policies on Stompy, a humanoid robot created by K-Scale Labs. The simulation runs on Mujoco and implements the Gym interface.
 
 ## Installation
